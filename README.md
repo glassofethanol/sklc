@@ -12,7 +12,7 @@ iex(1)> fcm_pid = spawn(Sklc, :demo_func, [])
 iex(2)> Process.alive?(fcm_pid)
 true
 iex(3)> Sklc.bind(fcm_pid, :random_group)
-iex(4)> send :random_name, "fcm_group"
+iex(4)> send :random_group, "fcm_group"
 ```
 
 ## Installation
